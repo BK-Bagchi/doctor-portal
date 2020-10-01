@@ -8,7 +8,7 @@ import { faFileAlt } from '@fortawesome/free-regular-svg-icons';
 
 import DHome from './DHome/DHome'
 import DAppointment from './DAppointment/DAppointment';
-import DPatients from '../Appointment/DPatients/DPatients';
+import DPatients from './DPatients/DPatients';
 
 const Dashboard = () => {
     const { path, url } = useRouteMatch()
