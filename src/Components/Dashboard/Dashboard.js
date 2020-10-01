@@ -9,6 +9,7 @@ import { faFileAlt } from '@fortawesome/free-regular-svg-icons';
 import DHome from './DHome/DHome'
 import DAppointment from './DAppointment/DAppointment';
 import DPatients from './DPatients/DPatients';
+import DPrescription from './DPrescription/DPrescription';
 
 const Dashboard = () => {
     const { path, url } = useRouteMatch()
@@ -37,6 +38,9 @@ const Dashboard = () => {
                             </Route>
                             <Route path={`${path}/patients`}>
                                 <DPatients />
+                            </Route>
+                            <Route path={`${path}/prescriptions`}>
+                                <DPrescription />
                             </Route>
                             <Route path={`${path}/*`}>
                                 <h1>Section Coming Soon</h1>

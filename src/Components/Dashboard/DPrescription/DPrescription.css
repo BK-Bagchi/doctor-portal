@@ -1,0 +1,17 @@
+.dashboard-prescription .tag-1{
+    color: #10CFE9;
+}
+.prescription-table th,
+.prescription-table td{
+    text-align: center !important;
+    padding: 5px 0;
+}
+.prescription-table .prescription{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0 2px;
+    color: white;
+    padding: 5px 25px;
+    background: linear-gradient(to right,  #18D3B2, #10CFE9);
+}
