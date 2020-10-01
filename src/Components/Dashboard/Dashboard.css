@@ -1,0 +1,22 @@
+.dashboard{
+    height: 90vh;
+}
+.dashboard .menu{
+    height: 100%;
+    background: linear-gradient(to bottom,  #18D3B2, #10CFE9);
+    color: white;
+    font-weight: 600;
+}
+.menu li{
+    padding: 10px 0;
+    margin:5px 0;
+    list-style-type: none;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.menu li:hover{
+    transform: scale(1.05);
+}
+.dashboard a{
+    color: white;
+}

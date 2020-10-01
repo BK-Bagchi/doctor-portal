@@ -12,6 +12,7 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul className="navbar-nav ml-auto">
                     <Link to="/"><li className="nav-link px-4">Home</li></Link>
+                    <Link to="/dashboard"><li className="nav-link px-4">Dashboard</li></Link>
                     <li className="nav-link px-4">About</li>
                     <li className="nav-link px-4">Dental Services</li>
                     <li className="nav-link px-4">Reviews</li>

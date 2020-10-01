@@ -1,0 +1,48 @@
+.dashboard-home .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    min-height: 85px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: white;
+}
+.pending-appointment{
+    background: #F1536E;
+}
+.todays-appointment{
+    background: #3DA5F4;
+}
+.total-appointment{
+    background: #00C689
+}
+.total-patients{
+    background: #FDA006;
+}
+.cards h1{
+    font-size: 60px;
+}
+.appointment-table th,
+.appointment-table td{
+    text-align: center !important;
+    padding: 5px 0;
+}
+.appointment-table button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0 2px;
+    color: white;
+    padding: 5px 25px;
+}
+.appointment-table .prescription{
+    background: linear-gradient(to right,  #18D3B2, #10CFE9);
+}
+.appointment-table .action-1{
+    background: royalblue;
+}
+.appointment-table .action-2{
+    background: khaki;
+    padding: 5px 15px;
+}
