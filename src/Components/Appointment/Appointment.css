@@ -1,0 +1,92 @@
+.appointment{
+    max-width: 100%;
+    background-image: url('../../Resources/images/Mask Group 2.png');
+    background-position: center;
+    background-size: cover;
+}
+.appointment .row{
+    width: 100%;
+    margin: 100px 0 !important;
+}
+.react-calendar{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 13px lightgrey;
+}
+.react-calendar__tile--active{
+    background: linear-gradient(to right,  #18D3B2, #10CFE9);
+    border-radius: 5px;
+}
+abbr[title]{
+    text-decoration: none;
+}
+.appointment .portal-cover{
+    width: 100%;
+}
+.appointment-list .all-appointment{
+    max-width: 90%;
+}
+.appointment-list .appointment-info{
+    box-shadow: 3px 3px 15px lightgrey;
+    padding: 30px 0;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.appointment-list .appointment-info:hover{
+    transform: scale(1.05);
+}
+.appointment-list .appointment-info button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.appointment-popup{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000000000 !important;
+    background:rgba(0,0,0,0.6);
+    /* display: flex !important; display of this part is handled by javascript */
+    align-items: center; 
+    justify-content: center;
+}
+.appointment-popup .form-holder{
+    position: relative;
+    width: 60%;
+    background: white;
+    border-radius: 22px;
+    padding: 40px 0;
+}
+.appointment-popup .submit-appointment{
+    width: 60%;
+}
+.appointment-popup .submit-appointment input{
+    border: 1px solid darkgrey;
+    outline: none;
+    margin: 5px 0;
+    height: 40px;
+    border-radius: 5px;
+}
+.submit-appointment .set-appointment{
+    width: 150px;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+.submit-appointment .set-appointment,
+.appointment-list .appointment-info button{
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,  #18D3B2, #10CFE9);
+    color: white;
+    border-radius: 5px;
+}
+.appointment-popup .subject{
+    color: #10CFE9;
+    margin-bottom: 40px;
+}
+.quit{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 40px;
+}

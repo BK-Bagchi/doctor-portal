@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 const Navigation = () => {
@@ -10,7 +11,7 @@ const Navigation = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul className="navbar-nav ml-auto">
-                    <li className="nav-link px-4">Home</li>
+                    <Link to="/"><li className="nav-link px-4">Home</li></Link>
                     <li className="nav-link px-4">About</li>
                     <li className="nav-link px-4">Dental Services</li>
                     <li className="nav-link px-4">Reviews</li>

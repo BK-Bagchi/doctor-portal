@@ -1,8 +1,9 @@
 .header{
     height: 90vh;
 }
-.header .navbar{
+.navbar{
     height: 10vh;
+    background: transparent;
 }
 .header .row{
     /* height: 90vh; */
