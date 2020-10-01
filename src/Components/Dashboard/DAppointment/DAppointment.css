@@ -1,0 +1,19 @@
+.dashboard-appointments .action{
+    background: linear-gradient(to right,  #18D3B2, #10CFE9);
+}
+.dashboard-appointments .appointment-list{
+    max-height: 90vh;
+    box-shadow: 3px 3px 15px lightgrey;
+    padding: 10px 20px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.dashboard-appointments .calendar{
+    max-height: 340px;
+}
+.appointment-list .tag-1{
+    color: #10CFE9;
+}
+.appointment-list .tag-2{
+    color: gray;
+}
