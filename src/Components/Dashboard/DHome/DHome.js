@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './DHome.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenFancy } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
+    const [appointments, setAppointments] = useState([])
+    useEffect(() => {
+        fetch(`http://localhost:4000/treatments`)
+            .then(res => res.json())
+            .then(data => setAppointments(data))
+    }, [])
     return (
         <section className="dashboard-home">
             <h4>Dashboard</h4>
@@ -11,7 +17,7 @@ const Home = () => {
                 <div className="col-md-3">
                     <div className="row cards pending-appointment">
                         <div className="col-4">
-                            <h1 className="m-0">5</h1>
+                            <h1 className="m-0">{appointments.length}</h1>
                         </div>
                         <div className="col-8">
                             <p className="m-0">Pending Appointments</p>
@@ -31,7 +37,7 @@ const Home = () => {
                 <div className="col-md-3">
                     <div className="row cards total-appointment">
                         <div className="col-4">
-                            <h1 className="m-0">5</h1>
+                            <h1 className="m-0">{appointments.length}</h1>
                         </div>
                         <div className="col-8">
                             <p className="m-0">Total Appointments</p>
@@ -41,7 +47,7 @@ const Home = () => {
                 <div className="col-md-3">
                     <div className="row cards total-patients">
                         <div className="col-4">
-                            <h1 className="m-0">5</h1>
+                            <h1 className="m-0">{appointments.length}</h1>
                         </div>
                         <div className="col-8">
                             <p className="m-0">Total Patients</p>
@@ -64,20 +70,27 @@ const Home = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td>13-08-2020</td>
-                            <td>12.00 AM</td>
-                            <td>BK Bagchi</td>
-                            <td>01716101098</td>
-                            <td>
-                                <button className="prescription">View</button>
-                            </td>
-                            <td>
-                                <button className="action-1">Pending</button>
-                                <button className="action-2"><FontAwesomeIcon icon={faPenFancy} /></button>
-                            </td>
-                        </tr>
+                        {
+                            appointments.map((appointment, index) => {
+                                const { _id, appointmentDate, patientName, patientPhone, treatmentTime } = appointment
+                                return (
+                                    <tr key={_id}>
+                                        <td>{index + 1}</td>
+                                        <td>{appointmentDate}</td>
+                                        <td>{treatmentTime}</td>
+                                        <td>{patientName}</td>
+                                        <td>{patientPhone}</td>
+                                        <td>
+                                            <button className="prescription">View</button>
+                                        </td>
+                                        <td>
+                                            <button className="action-1">Pending</button>
+                                            <button className="action-2"><FontAwesomeIcon icon={faPenFancy} /></button>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+                        }
                     </tbody>
                 </table>
             </div>

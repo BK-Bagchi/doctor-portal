@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './DPrescription.css'
 
 const DPrescription = () => {
+    const [prescriptions, setPrescriptions] = useState([])
+    useEffect(() => {
+        fetch(`http://localhost:4000/treatments`)
+            .then(res => res.json())
+            .then(data => setPrescriptions(data))
+    }, [])
     return (
         <section className="dashboard-prescription">
             <h5 className="tag-1">All Prescriptions</h5>
@@ -16,15 +22,22 @@ const DPrescription = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>01</td>
-                        <td>13.08.2020</td>
-                        <td>BK Bagchi</td>
-                        <td>01716101098</td>
-                        <td>
-                            <button className="prescription">View</button>
-                        </td>
-                    </tr>
+                    {
+                        prescriptions.map((prescription, index) => {
+                            const { _id, appointmentDate, patientName, patientPhone } = prescription
+                            return (
+                                <tr key={_id}>
+                                    <td>{index + 1}</td>
+                                    <td>{appointmentDate}</td>
+                                    <td>{patientName}</td>
+                                    <td>{patientPhone}</td>
+                                    <td>
+                                        <button className="prescription">View</button>
+                                    </td>
+                                </tr>
+                            )
+                        })
+                    }
                 </tbody>
             </table>
         </section>

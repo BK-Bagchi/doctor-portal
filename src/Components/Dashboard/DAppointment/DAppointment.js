@@ -1,8 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './DAppointment.css'
 import Calendar from 'react-calendar'
 const DAppointment = () => {
     const [value, onChange] = useState(new Date())
+
+    const [appointments, setAppointments] = useState([])
+    useEffect(() => {
+        fetch(`http://localhost:4000/treatments`)
+            .then(res => res.json())
+            .then(data => setAppointments(data))
+    }, [])
     return (
         <section className="row dashboard-appointments">
             <div className="col-md-5 d-flex justify-content-center calendar">
@@ -25,11 +32,18 @@ const DAppointment = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>BK Bagchi</td>
-                            <td>7:00 AM</td>
-                            <td><button className="action">Not Visited</button></td>
-                        </tr>
+                        {
+                            appointments.map(appointment => {
+                                const { _id, patientName, treatmentTime } = appointment
+                                return (
+                                    <tr key={_id}>
+                                        <td>{patientName}</td>
+                                        <td>{treatmentTime}</td>
+                                        <td><button className="action">Not Visited</button></td>
+                                    </tr>
+                                )
+                            })
+                        }
                     </tbody>
                 </table>
             </div>
