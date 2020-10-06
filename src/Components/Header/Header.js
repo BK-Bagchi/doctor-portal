@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 import CardImg1 from '../../Resources/images/001-dental.png'
 import CardImg2 from '../../Resources/images/tooth(1).png'
 import CardImg3 from '../../Resources/images/tooth.png'
+import Service from '../Service/Service';
 
 const HeaderBody = () => {
     const history = useHistory()
@@ -58,6 +59,7 @@ const HeaderBody = () => {
                 </div>
             </div>
             <br /><br /><br />
+            <Service />
         </section>
     );
 };

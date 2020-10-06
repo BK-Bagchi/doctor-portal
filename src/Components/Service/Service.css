@@ -1,0 +1,25 @@
+.service .our-services{
+    color: #10CFE9;
+}
+.service .provide{
+    font-weight: bold;
+    font-size: 50px;
+}
+.service .card-holder{
+    margin:70px 5%;
+}
+.service .card-image{
+    width: 90px;
+    margin: 20px 0;
+}
+.card-holder p{
+    font-size: 17px;
+}
+.card-item{
+    transition: 0.5s;
+}
+.card-item:hover{
+    background: #dff9fb;
+    transform: scale(1.05);
+    border-radius:10px;
+}

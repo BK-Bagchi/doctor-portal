@@ -6,6 +6,8 @@
     background: transparent;
     left: 0;
     right: 0;
+    z-index: 11;
+    background: white;
 }
 .header .row{
     /* height: 90vh; */
@@ -54,7 +56,6 @@
     color: darkgrey !important;
 }
 .header .cards{
-    margin-top: -80px;
     color: white;
 }
 .header .cards p{
