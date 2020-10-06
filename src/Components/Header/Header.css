@@ -4,6 +4,8 @@
 .navbar{
     height: 79px;
     background: transparent;
+    left: 0;
+    right: 0;
 }
 .header .row{
     /* height: 90vh; */
@@ -21,7 +23,7 @@
 }
 .header .fixed-bg-left{
     left: 0;
-    background-image: url('../../Resources/images/Mask Group 2.png');
+    background-image: url('../../Resources/images/MaskGroup2.png');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -50,4 +52,28 @@
 }
 .navbar .nav-link{
     color: darkgrey !important;
+}
+.header .cards{
+    margin-top: -80px;
+    color: white;
+}
+.header .cards p{
+    font-size:15px;
+}
+.header .portal-info{
+    height: 120px;
+    width:32%;
+    min-width: 330px;
+    background: royalblue;
+    border-radius: 5px;
+}
+.header .one,
+.header .three{
+    background: #1CC7C1;
+}
+.header .two{
+    background: #3A4256;
+}
+.header .card-image{
+    height: 90px;
 }

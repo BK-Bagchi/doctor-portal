@@ -4,7 +4,7 @@ import './Header.css'
 
 const Navigation = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light position-relative">
+        <nav className="navbar position-fixed navbar-expand-lg navbar-light position-relative">
             <h4>Doctor Portal</h4>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
