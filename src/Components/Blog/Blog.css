@@ -1,0 +1,38 @@
+.all-blog{
+    padding:0 50px;
+    margin: 60px 0;
+}
+.all-blog h5{
+    color: #10CFE9;
+}
+.all-blog h2{
+    font-size: 50px;   
+}
+.all-blog .one{
+    color: white;
+    background: linear-gradient(to right,  #18D3B2, #10CFE9)
+}
+.all-blog .blog{
+    height: 300px;
+    min-width: 410px;
+    padding: 25px;
+    box-shadow: 3px 3px 15px lightgrey;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+.all-blog .blog:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 15px darkgrey;
+}
+.all-blog .holder{
+    min-width: 420px;
+}
+.blog p{
+    font-size: 17px
+}
+.blog h6{
+    font-size:20px;
+}
+.all-blog .one span{
+    font-size: 50px;
+}
