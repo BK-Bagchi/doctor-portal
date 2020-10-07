@@ -10,6 +10,7 @@ import Service from '../Service/Service';
 import Booking from '../Booking/Booking';
 import Testimonial from '../Testimonial/Testimonial';
 import Blog from '../Blog/Blog';
+import Doctors from '../Doctors/Doctors';
 
 const HeaderBody = () => {
     const history = useHistory()
@@ -66,6 +67,7 @@ const HeaderBody = () => {
             <Booking />
             <Testimonial />
             <Blog />
+            <Doctors />
         </section>
     );
 };

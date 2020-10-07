@@ -1,0 +1,10 @@
+.doctors{
+    margin: 100px 0;
+    padding:0 150px;
+}
+.doctors h5{
+    color: #10CFE9;
+}
+.doctors span{
+    font-size :30px;
+}
