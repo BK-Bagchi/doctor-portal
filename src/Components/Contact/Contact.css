@@ -1,0 +1,26 @@
+.contact-us{
+    padding: 100px 200px;
+    background-image: linear-gradient(rgba(58, 66, 86, 0.8),rgba(58, 66, 86, 0.8)), url('../../Resources//images/MaskGroup4.png');
+    background-position: center left;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contact-us h2{
+    font-size: 50px;
+    color: white;
+}
+.contact-us h5{
+    color: #10CFE9;
+}
+.contact-us input,
+.contact-us textarea{
+    height: 60px;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.contact-us textarea{
+    height: auto;
+}

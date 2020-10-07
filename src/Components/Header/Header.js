@@ -11,6 +11,7 @@ import Booking from '../Booking/Booking';
 import Testimonial from '../Testimonial/Testimonial';
 import Blog from '../Blog/Blog';
 import Doctors from '../Doctors/Doctors';
+import Contact from '../Contact/Contact';
 
 const HeaderBody = () => {
     const history = useHistory()
@@ -68,6 +69,7 @@ const HeaderBody = () => {
             <Testimonial />
             <Blog />
             <Doctors />
+            <Contact />
         </section>
     );
 };
