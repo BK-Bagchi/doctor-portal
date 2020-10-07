@@ -1,7 +1,7 @@
 .service .our-services{
     color: #10CFE9;
 }
-.service .provide{
+.service h2{
     font-weight: bold;
     font-size: 50px;
 }
@@ -12,7 +12,8 @@
     width: 90px;
     margin: 20px 0;
 }
-.card-holder p{
+.card-holder p,
+.dental-care p{
     font-size: 17px;
 }
 .card-item{
@@ -22,4 +23,20 @@
     background: #dff9fb;
     transform: scale(1.05);
     border-radius:10px;
+}
+.service .dental-care{
+    margin: 80px 6%;
+}
+.dental-care img{
+    width: 400px;
+    height: 500px;
+}
+.dental-care button{
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, #18D3B2, #10CFE9);
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
 }

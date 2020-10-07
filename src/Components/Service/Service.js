@@ -3,6 +3,7 @@ import './Service.css'
 import CardImg1 from '../../Resources/images/001-dental.png'
 import CardImg2 from '../../Resources/images/tooth(1).png'
 import CardImg3 from '../../Resources/images/tooth.png'
+import DentalCare from '../../Resources/images/MaskGroup3.png'
 
 const Service = () => {
     return (
@@ -25,6 +26,20 @@ const Service = () => {
                         <img className="card-image" src={CardImg3} alt="Card Img" />
                         <h5>Fluoride Treatment</h5>
                         <p className="text-muted text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime qui placeat totam.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="dental-care">
+                <div className="row">
+                    <div className="col-md-5 d-flex justify-content-center">
+                        <img src={DentalCare} alt="Dental Care" />
+                    </div>
+                    <div className="col-md-7">
+                        <h2>Exceptional Dental Care, on Your Terms</h2>
+                        <p className="text-muted my-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore a cum veritatis ea, libero et enim quod, temporibus ducimus inventore totam molestiae excepturi dolor, odit consequuntur exercitationem autem animi labore voluptatum? Quis eligendi fuga nihil optio similique nostrum itaque deleniti dolor iusto vero excepturi repellat nobis voluptas ea ratione atque aperiam perspiciatis quibusdam ab, velit perferendis autem illum rerum? Tempora ut unde dolorem perferendis! Error reprehenderit facilis tempora amet?
+                        </p>
+                        <button>Learn More</button>
                     </div>
                 </div>
             </div>
