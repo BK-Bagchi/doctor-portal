@@ -7,6 +7,7 @@ import CardImg1 from '../../Resources/images/001-dental.png'
 import CardImg2 from '../../Resources/images/tooth(1).png'
 import CardImg3 from '../../Resources/images/tooth.png'
 import Service from '../Service/Service';
+import Booking from '../Booking/Booking';
 
 const HeaderBody = () => {
     const history = useHistory()
@@ -60,6 +61,7 @@ const HeaderBody = () => {
             </div>
             <br /><br /><br />
             <Service />
+            <Booking />
         </section>
     );
 };
