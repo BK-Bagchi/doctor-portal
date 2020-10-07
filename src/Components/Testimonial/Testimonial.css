@@ -1,0 +1,33 @@
+.testimonial{
+    padding:0 70px;
+    position: relative;
+}
+.testimonial .holder{
+    min-width: 450px;
+}
+.testimonial h5{
+    color: #10CFE9;
+}
+.testimonial h2{
+    font-size: 50px;
+}
+.testimonial .patient p{
+    color: #10CFE9;
+    font-weight: 600;
+    
+}
+.testimonial .opinion{
+    box-shadow: 3px 3px 15px lightgrey;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+.opinion:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 15px darkgrey;
+}
+.opinion .saying{
+    font-size: 17px;
+}
