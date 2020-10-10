@@ -24,3 +24,14 @@
 .contact-us textarea{
     height: auto;
 }
+.contact-us input[type="submit"]{
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, #18D3B2, #10CFE9);
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    margin: 0 auto;
+}
