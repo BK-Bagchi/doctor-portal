@@ -3,9 +3,6 @@ import './Header.css'
 import Navigation from './Navigation'
 import Image from '../../Resources/images/MaskGroup1.png'
 import { useHistory } from 'react-router-dom';
-import CardImg1 from '../../Resources/images/001-dental.png'
-import CardImg2 from '../../Resources/images/tooth(1).png'
-import CardImg3 from '../../Resources/images/tooth.png'
 import Service from '../Service/Service';
 import Booking from '../Booking/Booking';
 import Testimonial from '../Testimonial/Testimonial';
@@ -13,6 +10,22 @@ import Blog from '../Blog/Blog';
 import Doctors from '../Doctors/Doctors';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock, faMapMarkerAlt, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+
+const Card = ({ background, font, text, detail }) => {
+    return (
+        <div className={`row portal-info ${background} mb-3`}>
+            <div className="col-4 d-flex align-items-center">
+                <p className="icon"><FontAwesomeIcon icon={font} /></p>
+            </div>
+            <div className="col-8 d-flex flex-column justify-content-center">
+                <h5>{text}</h5>
+                <p>{detail}</p>
+            </div>
+        </div>
+    )
+}
 
 const HeaderBody = () => {
     const history = useHistory()
@@ -37,33 +50,9 @@ const HeaderBody = () => {
                     <div className="fixed-bg-right col-4"></div>
                 </div>
                 <div className="container cards d-flex flex-wrap justify-content-between position-relative">
-                    <div className="row portal-info one mb-3">
-                        <div className="col-4 d-flex align-items-center">
-                            <img className="card-image" src={CardImg1} alt="Card Img" />
-                        </div>
-                        <div className="col-8 d-flex flex-column justify-content-center">
-                            <h5>Opening hours</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur.</p>
-                        </div>
-                    </div>
-                    <div className="row portal-info two mb-3">
-                        <div className="col-4 d-flex align-items-center">
-                            <img className="card-image" src={CardImg2} alt="Card Img" />
-                        </div>
-                        <div className="col-8 d-flex flex-column justify-content-center">
-                            <h5>Visit our location</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <div className="row portal-info three mb-3">
-                        <div className="col-4 d-flex align-items-center">
-                            <img className="card-image" src={CardImg3} alt="Card Img" />
-                        </div>
-                        <div className="col-8 d-flex flex-column justify-content-center">
-                            <h5>Contact us now</h5>
-                            <p>01711001100</p>
-                        </div>
-                    </div>
+                    <Card background={'one'} font={faClock} text={'Opening hours'} detail={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur.'} />
+                    <Card background={'two'} font={faMapMarkerAlt} text={'Visit our location'} detail={'Lorem ipsum dolor sit amet.'} />
+                    <Card background={'three'} font={faPhoneVolume} text={'Contact us now'} detail={'01711001100'} />
                 </div>
             </section>
             <Service />

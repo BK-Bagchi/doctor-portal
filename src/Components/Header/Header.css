@@ -53,6 +53,10 @@
 .header .portal-cover{
     width: 80%;
 }
+.header .icon{
+    margin: 0 auto;
+    font-size: 70px !important;
+}
 .navbar .nav-link{
     color: darkgrey !important;
 }

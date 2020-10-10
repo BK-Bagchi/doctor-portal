@@ -5,6 +5,15 @@ import CardImg2 from '../../Resources/images/tooth(1).png'
 import CardImg3 from '../../Resources/images/tooth.png'
 import DentalCare from '../../Resources/images/MaskGroup3.png'
 
+const Card = ({ image, treatment }) => {
+    return (
+        <div className="col-md-4 d-flex flex-column align-items-center card-item">
+            <img className="card-image" src={image} alt="Card Img" />
+            <h5>{treatment}</h5>
+            <p className="text-muted text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime qui placeat totam.</p>
+        </div>
+    )
+}
 const Service = () => {
     return (
         <section className="service">
@@ -12,21 +21,9 @@ const Service = () => {
             <h2 className="text-center text-capitalized provide">Services we provide</h2>
             <div className="card-holder">
                 <div className="row w-100">
-                    <div className="col-md-4 d-flex flex-column align-items-center card-item">
-                        <img className="card-image" src={CardImg1} alt="Card Img" />
-                        <h5>Fluoride Treatment</h5>
-                        <p className="text-muted text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime qui placeat totam.</p>
-                    </div>
-                    <div className="col-md-4 flex-column d-flex align-items-center card-item">
-                        <img className="card-image" src={CardImg2} alt="Card Img" />
-                        <h5>Fluoride Treatment</h5>
-                        <p className="text-muted text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime qui placeat totam.</p>
-                    </div>
-                    <div className="col-md-4 flex-column d-flex align-items-center card-item">
-                        <img className="card-image" src={CardImg3} alt="Card Img" />
-                        <h5>Fluoride Treatment</h5>
-                        <p className="text-muted text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime qui placeat totam.</p>
-                    </div>
+                    <Card image={CardImg1} treatment={'Potassium Treatment'} />
+                    <Card image={CardImg2} treatment={'Fluoride Treatment'} />
+                    <Card image={CardImg3} treatment={'Chloride Treatment'} />
                 </div>
             </div>
             <div className="dental-care">
