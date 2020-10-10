@@ -1,0 +1,31 @@
+.footer{
+    height: 50vh;
+    padding: 50px;
+    background-image: url('../../Resources//images/footer-bg.png');
+    background-position: center top center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.footer ul{
+    list-style: none;
+}
+.footer li{
+    color: darkgrey;
+    font-size: 18px;
+}
+.footer p{
+    color: #10CFE9;
+    font-weight: 600;
+    font-size: 22px;
+}
+.footer .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #10CFE9;
+    transition: 0.5s;
+}
+.footer .icon p{
+    display: inline;
+    font-size: 40px;
+}

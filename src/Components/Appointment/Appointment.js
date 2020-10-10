@@ -6,6 +6,7 @@ import Image from '../../Resources/images/MaskGroup1.png'
 import './Appointment.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import Footer from '../Footer/Footer'
 
 const Appointment = () => {
     const [value, onChange] = useState(new Date());
@@ -94,6 +95,7 @@ const Appointment = () => {
                     </form>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };
